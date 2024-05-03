@@ -7,11 +7,12 @@ on:
 name: Publicação de Aplicações
 
 jobs:
-  Deploy:
+   Deploy:
     runs-on: ubuntu-22.04
-
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Clonar o repositório
+        uses: actions/checkout@v3
     
       - name: Instalar o R
         uses: r-lib/actions/setup-r@v2
