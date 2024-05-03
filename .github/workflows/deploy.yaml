@@ -9,8 +9,8 @@ name: Publicação de Aplicações
 jobs:
   Render:
     runs-on: ubuntu-22.04
-
-    step:
+  
+  steps:
       - name: Checkout this repo
         uses: actions/checkout@v3
 
