@@ -7,13 +7,16 @@ on:
 name: Publicação de Aplicações
 
 jobs:
-   Deploy:
+  Render:
     runs-on: ubuntu-22.04
-    
+
+    env:
+      LANG: "pt_BR.UTF-8"
+
     steps:
-      - name: Clonar o repositório
+      - name: Checkout this repo
         uses: actions/checkout@v3
-    
+
       - name: Instalar o R
         uses: r-lib/actions/setup-r@v2
         with:
