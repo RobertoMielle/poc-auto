@@ -10,10 +10,7 @@ jobs:
   Render:
     runs-on: ubuntu-22.04
 
-    env:
-      LANG: "pt_BR.UTF-8"
-
-    steps:
+    step:
       - name: Checkout this repo
         uses: actions/checkout@v3
 
